@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   root 'movies#index'
   resources :movies, only: %i(index show)
   resources :actors, only: %i(index show)
+
+  get 'singup' => 'users#new'
+  resources :users
 end
