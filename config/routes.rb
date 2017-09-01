@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :movies, only: %i(index show)
   resources :actors, only: %i(index show)
 
-  get 'singup' => 'users#new'
+  get 'signup' => 'users#new'
   resources :users
 end
